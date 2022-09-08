@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ProfileCard = styled.div`
     width: 30%;
-    margin-top: ${p => p.theme.space[5]}px;
     border-radius: ${p => p.theme.radii.normal}px;
     overflow: hidden;
     box-shadow: 0px 0px 6px 1px ${p => p.theme.colors.darkGrey};
@@ -42,7 +41,7 @@ export const UserLocation = styled.p`
 `
 
 export const StatsList = styled.ul`
-    background-color: ${p => p.theme.colors.lightGray};
+    background-color: ${p => p.theme.colors.lightGrey};
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-top: ${p => p.theme.borders.border} ${p => p.theme.colors.darkGrey};
