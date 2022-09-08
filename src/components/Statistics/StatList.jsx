@@ -1,7 +1,7 @@
 import { List, ListItem, ItemLable, ItemPercentage } from './StatList.styled'
-import data from '../../data.json'
 
-export const StatList = () => {
+
+export const StatList = ({data}) => {
     return (
     <List>{data.map(({ id, label, percentage }) => (
         <ListItem key={id} statLabel={label}>

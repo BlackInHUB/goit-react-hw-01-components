@@ -17,10 +17,10 @@ export const theme = {
   },
   borders: {
     border: '1px solid',
-    circle: '50%',
   },
   radii: {
     normal: 8,
+    circle: '50%',
   },
   fontSizes: {
     title: 24,
