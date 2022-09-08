@@ -1,36 +1,11 @@
-import { StatSection, StatTitle, StatList } from "./Statistics.styled"
-import data from '../../data.json'
+import { StatSection, StatTitle } from "./Statistics.styled"
+import { StatList } from "./StatList"
 
-export const Statistics = ({data}) => {
+export const Statistics = ({title}) => {
     return (
-    <StatSection>
-        <StatTitle></StatTitle>        
+    <StatSection title={title}>
+        <StatTitle>{title}</StatTitle>
         <StatList></StatList>
     </StatSection>
  )
 }
-
-// `
-// <St class="statistics">
-//   <h2 class="title">Upload stats</h2>
-
-//   <ul class="stat-list">
-//     <li class="item">
-//       <span class="label">.docx</span>
-//       <span class="percentage">4%</span>
-//     </li>
-//     <li class="item">
-//       <span class="label">.mp3</span>
-//       <span class="percentage">14%</span>
-//     </li>
-//     <li class="item">
-//       <span class="label">.pdf</span>
-//       <span class="percentage">41%</span>
-//     </li>
-//     <li class="item">
-//       <span class="label">.mp4</span>
-//       <span class="percentage">12%</span>
-//     </li>
-//   </ul>
-// </St>
-//  `
