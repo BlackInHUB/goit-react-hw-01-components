@@ -1,8 +1,7 @@
 import { StatSection, StatTitle } from "./Statistics.styled"
 import { StatList } from "./StatList"
-import data from '../../data.json'
 
-export const Statistics = ({title}) => {
+export const Statistics = ({title, data}) => {
     return (
     <StatSection title={title}>
         <StatTitle>{title}</StatTitle>
