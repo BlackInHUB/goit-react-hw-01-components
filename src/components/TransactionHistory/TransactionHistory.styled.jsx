@@ -5,6 +5,7 @@ export const Table = styled.table`
     border-collapse: collapse;
     background-color: ${p => p.theme.colors.white};
     border-radius: ${p => p.theme.radii.normal}px;
+    box-shadow: 0px 3px 3px 1px ${p => p.theme.colors.darkGrey};
 `
 
 export const TableHead = styled.thead`
