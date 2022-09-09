@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Table = styled.table`
     margin-top: ${p => p.theme.space[5]}px;
     border-collapse: collapse;
