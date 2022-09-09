@@ -9,16 +9,9 @@ import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
-const {username, avatar, tag, location, stats} = user
-  
   return (
     <Box py={5} textAlign='center' display='flex' flexDirection='column' alignItems='center'>
-      <Profile
-        username={username}
-        tag={tag}
-        location={location}
-        avatar={avatar}
-        stats={stats} />
+      <Profile user={user} />
       <Statistics title='Upload stats' data={data}></Statistics>
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
