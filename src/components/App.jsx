@@ -12,7 +12,7 @@ export const App = () => {
   return (
     <Box py={5} textAlign='center' display='flex' flexDirection='column' alignItems='center'>
       <Profile user={user} />
-      <Statistics title='Upload stats' data={data}></Statistics>
+      <Statistics title='Upload stats' data={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </Box>

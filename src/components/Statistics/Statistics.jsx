@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 export const Statistics = ({title, data}) => {
     return (
     <StatSection title={title}>
-        <StatTitle>{title}</StatTitle>
+        {title && <StatTitle>{title}</StatTitle>}
         <StatList>{data.map(({ id, label, percentage }) => (
             <ListItem key={id} statLabel={label}>
                 <ItemLable>{label}</ItemLable>
@@ -16,10 +16,10 @@ export const Statistics = ({title, data}) => {
 }
 
 Statistics.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     data: PropTypes.arrayOf(PropTypes.exact({
         id: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
         percentage: PropTypes.number.isRequired
-    }))
+    })).isRequired
 }
